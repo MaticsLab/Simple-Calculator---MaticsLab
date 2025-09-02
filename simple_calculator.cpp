@@ -5,9 +5,10 @@
 */
 
 #include <iostream>
+#include <cmath>
 using namespace std;
 
-int main() {
+int main() { 
     double num1, num2, result;
     char op;
 
@@ -18,25 +19,19 @@ int main() {
     cout << "Enter a second number: ";
     cin >> num2;
 
-    if (op == '+')
+    if (op == '+') {
         result = num1 + num2;
-
-        else if (op == '-')
+    } else if (op == '-') {
         result = num1 - num2;
-
-        else if (op == '*')
+    } else if (op == '*') {
         result = num1 * num2;
-
-        else if (op == '/')
+    } else if (op == '/') {
         result = num1 / num2;
-
-        else {
-            cout << "invalid operator!" << endl;
-            return 1;
+    } else {
+        cout << "invalid operator!" << endl;
         }
 
         cout << "Result: " << result << endl;
-
 
     return 0;
 }
